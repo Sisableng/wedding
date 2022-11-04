@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&family=Libre+Caslon+Display&family=Mrs+Saint+Delafield&family=ZCOOL+XiaoWei&display=swap");
+
+/* width */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-inherit;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 rounded-full;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-rose-800;
+}
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+html {
+  @apply relative;
+}
+
+html,
+body {
+  @apply text-slate-800;
+}
+
+.timer {
+  @apply block text-rose-500 text-base !important;
+}
+
+.on-top {
+  @apply bg-rose-400 rounded-full hover:text-slate-800;
+}
+
+.scrolled {
+  @apply bg-slate-800 hover:text-rose-400 !important;
+}

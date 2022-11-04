@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-slate-800 transition-all duration-500">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="shortcut icon" href="src/img/icon.png" type="image/x-icon" />
+
+    <!-- plugin -->
+    <link rel="stylesheet" href="dist/vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="dist/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hubballi&family=Libre+Caslon+Display&family=Mrs+Saint+Delafield&family=ZCOOL+XiaoWei&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Welcome -->
+
+    <!-- <div
+      id="welcome_container"
+      class="fixed inset-0 bg-rose-500 text-white z-50 overflow-hidden"
+    >
+      <div
+        class="flex flex-col w-screen h-screen items-center justify-center"
+        data-aos="zoom-in"
+      >
+        <p class="block mb-10 uppercase tracking-[0.4rem] lg:tracking-[0.6rem]">
+          Undangan Pernikahan
+        </p>
+        <h1 class="font-name2 text-4xl lg:text-7xl">Fulan</h1>
+        <span class="font-name2 text-4xl lg:text-7xl">&</span>
+        <h1 class="font-name2 text-4xl lg:text-7xl">Siti Fulan</h1>
+        <button
+          id="welcome_button"
+          class="mt-10 px-4 py-2 bg-slate-800 rounded-full hover:bg-slate-700"
+        >
+          Buka Undangan
+        </button>
+      </div>
+    </div> -->
+
+    <section
+      id="sec1"
+      class="relative container flex w-full h-screen flex-col items-center justify-center text-white text-center transition-all duration-500"
+    >
+      <div class="absolute top-0 lg:-top-32">
+        <img
+          src="src/asset/flower-center.png"
+          alt=""
+          srcset=""
+          class="mx-auto w-[60rem] h-auto"
+        />
+      </div>
+
+      <h1 class="block lg:mt-40 lg:text-4xl italic text-rose-400">
+        بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ
+      </h1>
+      <p class="block mt-10 lg:mt-14 lg:px-40 text-sm lg:text-base italic">
+        "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+        pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan
+        merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan
+        sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda
+        (kebesaran Allah) bagi kaum yang berpikir." -
+        <span class="font-bold text-rose-400">QS. Ar-Rum: 21</span>
+      </p>
+
+      <a
+        href="#sec2"
+        class="absolute bottom-10 block w-max mt-20 text-4xl text-slate-500"
+      >
+        <i class="fal fa-chevron-down animate-bounce"></i>
+      </a>
+    </section>
+
+    <section
+      id="sec2"
+      class="container flex flex-col w-full min-h-screen items-center justify-center my-20"
+      data-appear-top-offset="-200"
+    >
+      <h1 class="text-center text-rose-700 italic" data-aos="fade-up">
+        "Tidak ada solusi yang lebih baik bagi dua insan yang saling mencintai
+        dibanding pernikahan."<br />-
+        <span class="font-bold">HR. Ibnu Majah</span>
+      </h1>
+
+      <div class="w-full h-full grid grid-cols-1 lg:grid-cols-5 gap-4 mt-20">
+        <!-- Male -->
+        <div
+          class="h-80 lg:col-span-2 text-center space-y-8"
+          data-aos="fade-up"
+        >
+          <div
+            class="w-40 h-40 lg:w-60 lg:h-60 overflow-hidden rounded-full mx-auto border-8 border-rose-500 ring-[10px] ring-rose-300"
+          >
+            <img
+              src="https://static.wikia.nocookie.net/beluga/images/9/99/Beluga_d.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h1 class="font-name2 text-rose-700 font-bold text-2xl lg:text-4xl">
+            Fulan.spd.sts.ps3.ps4.ps5
+          </h1>
+          <p class="text-center">
+            Anak Pertama dari : <br />
+            Bapak dobleh wadidaw & Ibu siti dobleh uwaw
+          </p>
+        </div>
+
+        <!-- Gap -->
+        <div
+          class="flex flex-col w-full h-80 items-center justify-center lg:col-span-1 text-center text-7xl space-y-4"
+          data-aos="fade-up"
+        >
+          <span class="font-name1">&</span>
+          <span class="text-base text-rose-700 font-bold lg:text-xl"
+            >22 November 2022</span
+          >
+          <span class="text-base">Depan Menara Eiffel, Europa</span>
+        </div>
+
+        <!-- Female -->
+        <div
+          class="h-80 lg:col-span-2 text-center space-y-8"
+          data-aos="fade-up"
+        >
+          <div
+            class="w-40 h-40 lg:w-60 lg:h-60 overflow-hidden rounded-full mx-auto border-8 border-rose-500 ring-[10px] ring-rose-300"
+          >
+            <img
+              src="https://i.pinimg.com/originals/a3/34/a1/a334a1a767342023dd8c8196e609f17e.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <h1 class="font-name2 text-rose-700 font-bold text-2xl lg:text-4xl">
+            Siti Fulan.ti
+          </h1>
+          <p class="text-center">
+            Anak Pertama dari : <br />
+            Bapak dobleh wadidaw & Ibu siti dobleh uwaw
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="sec3"
+      class="flex w-full min-h-screen flex-col items-center justify-center bg-rose-500 text-white text-center"
+    >
+      <div class="w-full bg-slate-800">
+        <div
+          class="flex h-40 items-center justify-center divide-x overflow-hidden"
+          data-aos="fade-up"
+        >
+          <div
+            id="days"
+            class="text-2xl lg:text-7xl px-6 flex flex-col items-center lg:flex-row lg:items-end"
+          ></div>
+          <div
+            id="hours"
+            class="text-2xl lg:text-7xl px-6 flex flex-col items-center lg:flex-row lg:items-end"
+          ></div>
+          <div
+            id="minutes"
+            class="text-2xl lg:text-7xl px-6 flex flex-col items-center lg:flex-row lg:items-end"
+          ></div>
+          <div
+            id="seconds"
+            class="text-2xl lg:text-7xl px-6 flex flex-col items-center lg:flex-row lg:items-end"
+          ></div>
+        </div>
+      </div>
+      <div class="container py-20">
+        <h1 class="font-name2 text-4xl lg:text-7xl" data-aos="fade-up">
+          Tempat & Waktu
+        </h1>
+        <div
+          class="w-full grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-4 mt-20"
+        >
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63419.629526992474!2d107.73012186512386!3d-6.556126764661501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e693c919ece3ed5%3A0x630f121657291f0!2sSubang%2C%20Kec.%20Subang%2C%20Kabupaten%20Subang%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1667560748362!5m2!1sid!2sid"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="w-full h-96 rounded-3xl"
+            ></iframe>
+          </div>
+
+          <div class="space-y-8" data-aos="fade-up">
+            <span class="block text-6xl lg:text-7xl">
+              <i class="fa-duotone fa-rings-wedding"></i>
+            </span>
+
+            <div>
+              <p class="text-xl lg:text-2xl font-semibold">
+                Selasa, 22 November 2022
+              </p>
+              <p class="text-base lg:text-xl">Mulai dari 09:00 - Selesai</p>
+            </div>
+
+            <p class="block lg:px-20">
+              Kec. Subang Kabupaten Subang Jawa Barat, Indonesia, Sebagian besar
+              berawan · 27 °C 18.30
+            </p>
+            <a
+              href="https://goo.gl/maps/BSw3yN2GNAxmX7cG9"
+              class="block w-max mx-auto px-4 py-2 bg-slate-800 rounded-full hover:bg-slate-700"
+              ><i class="fa-solid fa-location-dot mr-2 text-rose-400"></i> Buka
+              di Google Maps</a
+            >
+          </div>
+        </div>
+
+        <div class="mt-40" data-aos="zoom-in">
+          <img
+            src="https://www.ruangpengantin.com/demo/scroll006/img/thankyou.png?version=1598111369"
+            alt=""
+            class="mx-auto w-40 lg:w-60 h-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating Button -->
+    <div
+      class="fixed w-max h-auto bottom-4 right-4 space-y-2 text-white text-xl z-10"
+    >
+      <button
+        id="addDate"
+        class="flex w-14 h-14 justify-center items-center on-top hover:rotate-12 transition-all ease-out"
+      >
+        <i class="fa-solid fa-calendar-plus"></i>
+      </button>
+      <a
+        id="openMap"
+        href="https://goo.gl/maps/BSw3yN2GNAxmX7cG9"
+        class="flex w-14 h-14 justify-center items-center on-top hover:rotate-12 transition-all ease-out"
+      >
+        <i class="fa-solid fa-location-dot"></i>
+      </a>
+    </div>
+
+    <!-- iklan -->
+    <div
+      id="ads"
+      class="fixed bottom-0 left-4 h-60 w-52 lg:w-60 lg:h-80 bg-white rounded-t-3xl transition-all ease-out"
+    >
+      <div class="h-full relative">
+        <div
+          id="iniIklan"
+          class="absolute -top-10 inset-x-0 w-full text-white font-bold p-1 px-4 text-center rounded-full"
+        >
+          <span>Ini Iklan</span>
+        </div>
+
+        <div
+          class="absolute top-0 inset-x-0 w-full h-10 flex items-center justify-between p-2"
+        >
+          <img
+            src="https://www.freepnglogos.com/uploads/shopee-logo/shopee-circle-logo-design-shopping-bag-13.png"
+            alt=""
+            srcset=""
+            class="w-8 h-8"
+          />
+          <button
+            id="closeAds"
+            class="w-8 h-8 flex items-center justify-center text-white"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <img
+          src="src/img/iklan.jpg"
+          alt=""
+          class="w-full h-24 lg:h-40 object-cover rounded-t-3xl"
+        />
+        <div class="p-4 text-center text-sm">
+          <p>
+            Makin enak, pulang dari perjalanan sambil makan keripik Pohho Rasa.
+          </p>
+
+          <a
+            href="https://shopee.co.id/KERIPIK-SINGKONG-RASA-PEDAS-KERAJAAN-KRIPIK_POHHO-KRIPIK-SINGKONG-TERMURAH-i.669294832.14147663842?sp_atk=02de207e-5f4a-4fbb-b21a-4ec04311f42d&xptdk=02de207e-5f4a-4fbb-b21a-4ec04311f42d"
+            class="absolute bottom-4 inset-x-0 block w-max mt-4 mx-auto p-1 px-3 bg-orange-500 rounded-full text-white"
+            target="_blank"
+            >Yuk, Beli sekarang</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+    <script src="dist/vendor/sweetalert/sweetalert.all.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.min.js"
+      integrity="sha512-vYYoQJKYzaJQaOaYxaJhhmxikOJ2SEgHwmCNa0EMP0aRr7opdt4HHrorAwnCyPm8bdW/JBApIomo85YaBX81zA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+  </body>
+</html>
