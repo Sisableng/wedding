@@ -651,18 +651,6 @@ video {
   left: 1rem !important;
 }
 
-.-top-32 {
-  top: -8rem !important;
-}
-
-.-top-20 {
-  top: -5rem !important;
-}
-
-.-top-14 {
-  top: -3.5rem !important;
-}
-
 .-top-10 {
   top: -2.5rem !important;
 }
@@ -675,10 +663,6 @@ video {
   z-index: 10 !important;
 }
 
-.m-0 {
-  margin: 0px !important;
-}
-
 .mx-auto {
   margin-left: auto !important;
   margin-right: auto !important;
@@ -687,6 +671,10 @@ video {
 .my-20 {
   margin-top: 5rem !important;
   margin-bottom: 5rem !important;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem !important;
 }
 
 .mt-10 {
@@ -703,10 +691,6 @@ video {
 
 .mt-40 {
   margin-top: 10rem !important;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem !important;
 }
 
 .mt-4 {
@@ -733,16 +717,16 @@ video {
   height: auto !important;
 }
 
+.h-full {
+  height: 100% !important;
+}
+
 .h-80 {
   height: 20rem !important;
 }
 
 .h-40 {
   height: 10rem !important;
-}
-
-.h-full {
-  height: 100% !important;
 }
 
 .h-96 {
@@ -757,20 +741,16 @@ video {
   height: 15rem !important;
 }
 
-.h-20 {
-  height: 5rem !important;
-}
-
-.h-24 {
-  height: 6rem !important;
-}
-
 .h-10 {
   height: 2.5rem !important;
 }
 
 .h-8 {
   height: 2rem !important;
+}
+
+.h-24 {
+  height: 6rem !important;
 }
 
 .min-h-screen {
@@ -803,16 +783,8 @@ video {
   width: 3.5rem !important;
 }
 
-.w-60 {
-  width: 15rem !important;
-}
-
 .w-52 {
   width: 13rem !important;
-}
-
-.w-10 {
-  width: 2.5rem !important;
 }
 
 .w-8 {
@@ -948,16 +920,6 @@ video {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-blue-500 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-rose-200 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(254 205 211 / var(--tw-bg-opacity)) !important;
-}
-
 .bg-rose-500 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(244 63 94 / var(--tw-bg-opacity)) !important;
@@ -973,31 +935,26 @@ video {
   background-color: rgb(249 115 22 / var(--tw-bg-opacity)) !important;
 }
 
+.bg-rose-200 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(254 205 211 / var(--tw-bg-opacity)) !important;
+}
+
 .object-cover {
   -o-object-fit: cover !important;
      object-fit: cover !important;
-}
-
-.p-4 {
-  padding: 1rem !important;
-}
-
-.p-2 {
-  padding: 0.5rem !important;
 }
 
 .p-1 {
   padding: 0.25rem !important;
 }
 
-.py-20 {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+.p-2 {
+  padding: 0.5rem !important;
 }
 
-.px-6 {
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
+.p-4 {
+  padding: 1rem !important;
 }
 
 .px-4 {
@@ -1010,14 +967,14 @@ video {
   padding-bottom: 0.5rem !important;
 }
 
-.px-2\.5 {
-  padding-left: 0.625rem !important;
-  padding-right: 0.625rem !important;
+.px-6 {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
 }
 
-.px-2 {
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
+.py-20 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
 }
 
 .px-3 {
@@ -1037,14 +994,14 @@ video {
   font-family: Mrs Saint Delafield, cursive !important;
 }
 
-.text-sm {
-  font-size: 0.875rem !important;
-  line-height: 1.25rem !important;
-}
-
 .text-4xl {
   font-size: 2.25rem !important;
   line-height: 2.5rem !important;
+}
+
+.text-sm {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
 }
 
 .text-2xl {
@@ -1086,18 +1043,6 @@ video {
 
 .italic {
   font-style: italic !important;
-}
-
-.tracking-wider {
-  letter-spacing: 0.05em !important;
-}
-
-.tracking-widest {
-  letter-spacing: 0.1em !important;
-}
-
-.tracking-\[0\.5rem\] {
-  letter-spacing: 0.5rem !important;
 }
 
 .tracking-\[0\.4rem\] {
@@ -1268,10 +1213,6 @@ body {
     height: 20rem !important;
   }
 
-  .lg\:h-32 {
-    height: 8rem !important;
-  }
-
   .lg\:h-40 {
     height: 10rem !important;
   }
@@ -1310,6 +1251,11 @@ body {
     padding-right: 5rem !important;
   }
 
+  .lg\:text-7xl {
+    font-size: 4.5rem !important;
+    line-height: 1 !important;
+  }
+
   .lg\:text-4xl {
     font-size: 2.25rem !important;
     line-height: 2.5rem !important;
@@ -1323,11 +1269,6 @@ body {
   .lg\:text-xl {
     font-size: 1.25rem !important;
     line-height: 1.75rem !important;
-  }
-
-  .lg\:text-7xl {
-    font-size: 4.5rem !important;
-    line-height: 1 !important;
   }
 
   .lg\:text-2xl {

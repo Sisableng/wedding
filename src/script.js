@@ -1,7 +1,7 @@
 $(function () {
-  // $("#welcome_button").click(function () {
-  //   $("#welcome_container").slideUp("slow");
-  // });
+  $("#welcome_button").click(function () {
+    $("#welcome_container").slideUp("slow");
+  });
 
   // Iklan
   $("#closeAds").click(function () {
