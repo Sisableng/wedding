@@ -15,7 +15,11 @@ module.exports = {
       name1: "Mrs Saint Delafield, cursive",
       name2: "Great Vibes, cursive",
     },
-    extend: {},
+    extend: {
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+      },
+    },
   },
   plugins: [],
 };

@@ -6,7 +6,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  @apply w-2;
+  @apply w-0;
 }
 
 /* Track */
@@ -35,6 +35,10 @@ html {
 html,
 body {
   @apply text-slate-800;
+}
+
+.brush {
+  @apply bg-[url('https://ik.imagekit.io/s5rf5uyj5/poho/5615293_LioE7b3jS.jpg')] bg-cover bg-right;
 }
 
 .timer {

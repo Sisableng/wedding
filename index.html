@@ -37,22 +37,45 @@
       id="welcome_container"
       class="fixed inset-0 bg-rose-500 text-white z-50 overflow-hidden"
     >
-      <div
-        class="flex flex-col w-screen h-screen items-center justify-center"
-        data-aos="zoom-in"
-      >
-        <p class="block mb-10 uppercase tracking-[0.4rem] lg:tracking-[0.6rem]">
-          Undangan Pernikahan
-        </p>
-        <h1 class="font-name2 text-4xl lg:text-7xl">Fulan</h1>
-        <span class="font-name2 text-4xl lg:text-7xl">&</span>
-        <h1 class="font-name2 text-4xl lg:text-7xl">Siti Fulan</h1>
-        <button
-          id="welcome_button"
-          class="mt-10 px-4 py-2 bg-slate-800 rounded-full hover:bg-slate-700"
+      <div class="relative">
+        <div
+          class="flex flex-col w-screen h-screen items-center justify-center"
+          data-aos="zoom-in"
         >
-          Buka Undangan
-        </button>
+          <p
+            class="block mb-10 lg:mb-20 px-20 text-center uppercase tracking-[0.4rem] lg:tracking-[0.6rem]"
+          >
+            Undangan Pernikahan
+          </p>
+          <h1 class="font-name2 text-4xl lg:text-7xl">Agung & Hilma</h1>
+          <!-- <span class="block my-4 font-name2 text-4xl lg:text-7xl">&</span>
+        <h1 class="font-name2 text-4xl lg:text-7xl">Hilma</h1> -->
+          <span class="block mt-10 mb-4 text-center">
+            Kepada Yth:
+            <br />
+            Bapak/Ibu/Saudara/i
+          </span>
+          <button
+            id="welcome_button"
+            class="px-4 py-2 bg-slate-800 rounded-full hover:bg-slate-700"
+          >
+            Buka Undangan
+          </button>
+        </div>
+        <div class="absolute bottom-0 left-0" data-aos="fade-up">
+          <img
+            src="src/asset/left.png"
+            alt=""
+            class="w-40 h-40 lg:w-80 lg:h-80"
+          />
+        </div>
+        <div class="absolute top-0 right-0" data-aos="fade-down">
+          <img
+            src="src/asset/right.png"
+            alt=""
+            class="w-40 h-40 lg:w-80 lg:h-80 -rotate-90"
+          />
+        </div>
       </div>
     </div>
 
@@ -94,20 +117,27 @@
       class="container flex flex-col w-full min-h-screen items-center justify-center my-20"
       data-appear-top-offset="-200"
     >
-      <h1 class="text-center text-rose-700 italic" data-aos="fade-up">
-        "Tidak ada solusi yang lebih baik bagi dua insan yang saling mencintai
-        dibanding pernikahan."<br />-
-        <span class="font-bold">HR. Ibnu Majah</span>
-      </h1>
+      <p
+        class="text-center lg:text-2xl text-rose-700 italic font-bold"
+        data-aos="fade-up"
+      >
+        اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَا تُهُ
+        <br />
+        <br />
+      </p>
+      <span
+        class="text-center text-rose-700 italic font-normal px-10 lg:px-80"
+        data-aos="fade-up"
+      >
+        Tanpa mengurangi rasa hormat, Kami bermaksud mengundang
+        Bapak/Ibu/Saudara/i pada acara resepsi pernikahan kami:
+      </span>
 
       <div class="w-full h-full grid grid-cols-1 lg:grid-cols-5 gap-4 mt-20">
         <!-- Male -->
-        <div
-          class="h-80 lg:col-span-2 text-center space-y-8"
-          data-aos="fade-up"
-        >
+        <div class="lg:col-span-2 text-center space-y-8" data-aos="fade-up">
           <div
-            class="w-40 h-40 lg:w-60 lg:h-60 overflow-hidden rounded-full mx-auto border-8 border-rose-500 ring-[10px] ring-rose-300"
+            class="w-40 h-40 lg:w-60 lg:h-60 overflow-hidden rounded-full mx-auto border-8 border-rose-300"
           >
             <img
               src="https://static.wikia.nocookie.net/beluga/images/9/99/Beluga_d.png"
@@ -116,11 +146,11 @@
             />
           </div>
           <h1 class="font-name2 text-rose-700 font-bold text-2xl lg:text-4xl">
-            Fulan.spd.sts.ps3.ps4.ps5
+            Agung Muhamad Ramadhan
           </h1>
-          <p class="text-center">
-            Anak Pertama dari : <br />
-            Bapak dobleh wadidaw & Ibu siti dobleh uwaw
+          <p class="text-center text-rose-700">
+            Putra dari : <br />
+            Bapak Ahnum Jaenudin & Ibu Aidah
           </p>
         </div>
 
@@ -133,16 +163,13 @@
           <span class="text-base text-rose-700 font-bold lg:text-xl"
             >22 November 2022</span
           >
-          <span class="text-base">Depan Menara Eiffel, Europa</span>
+          <span class="text-base text-rose-700">Jam 09:00 - Selesai</span>
         </div>
 
         <!-- Female -->
-        <div
-          class="h-80 lg:col-span-2 text-center space-y-8"
-          data-aos="fade-up"
-        >
+        <div class="lg:col-span-2 text-center space-y-8" data-aos="fade-up">
           <div
-            class="w-40 h-40 lg:w-60 lg:h-60 overflow-hidden rounded-full mx-auto border-8 border-rose-500 ring-[10px] ring-rose-300"
+            class="w-40 h-40 lg:w-60 lg:h-60 overflow-hidden rounded-full mx-auto border-8 border-rose-300"
           >
             <img
               src="https://i.pinimg.com/originals/a3/34/a1/a334a1a767342023dd8c8196e609f17e.jpg"
@@ -152,14 +179,23 @@
           </div>
 
           <h1 class="font-name2 text-rose-700 font-bold text-2xl lg:text-4xl">
-            Siti Fulan.ti
+            Hilma Azkia Nuraini
           </h1>
-          <p class="text-center">
-            Anak Pertama dari : <br />
-            Bapak dobleh wadidaw & Ibu siti dobleh uwaw
+          <p class="text-center text-rose-700">
+            Putri dari : <br />
+            Bapak Ade sukarli & Mamah Ani sumarni
           </p>
         </div>
       </div>
+
+      <p
+        class="block mt-20 text-center text-rose-700 italic"
+        data-aos="fade-up"
+      >
+        "Tidak ada solusi yang lebih baik bagi dua insan yang saling mencintai
+        dibanding pernikahan."<br />-
+        <span class="font-bold">HR. Ibnu Majah</span>
+      </p>
     </section>
 
     <section
@@ -196,14 +232,14 @@
         <div
           class="w-full grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-4 mt-20"
         >
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+          <div data-aos="fade-up" data-aos-delay="800">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63419.629526992474!2d107.73012186512386!3d-6.556126764661501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e693c919ece3ed5%3A0x630f121657291f0!2sSubang%2C%20Kec.%20Subang%2C%20Kabupaten%20Subang%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1667560748362!5m2!1sid!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d589.2222356340935!2d107.75682377101036!3d-6.547054628901221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd8728477306a52aa!2zNsKwMzInNDkuMCJTIDEwN8KwNDUnMjUuNiJF!5e0!3m2!1sid!2sid!4v1667649262562!5m2!1sid!2sid"
               style="border: 0"
-              allowfullscreen=""
+              allowfullscreen="true"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              class="w-full h-96 rounded-3xl"
+              class="w-full h-96 rounded-3xl z-10"
             ></iframe>
           </div>
 
@@ -220,11 +256,11 @@
             </div>
 
             <p class="block lg:px-20">
-              Kec. Subang Kabupaten Subang Jawa Barat, Indonesia, Sebagian besar
-              berawan · 27 °C 18.30
+              Blok. Walahar, Rt/Rw 046/019, Kelurahan Dangdeur, Kec. Subang
+              Kab. Subang
             </p>
             <a
-              href="https://goo.gl/maps/BSw3yN2GNAxmX7cG9"
+              href="https://goo.gl/maps/8GYVTyiQH4W5WYMo7"
               class="block w-max mx-auto px-4 py-2 bg-slate-800 rounded-full hover:bg-slate-700"
               ><i class="fa-solid fa-location-dot mr-2 text-rose-400"></i> Buka
               di Google Maps</a
@@ -232,19 +268,40 @@
           </div>
         </div>
 
-        <div class="mt-40" data-aos="zoom-in">
+        <div class="mt-32">
           <img
             src="https://www.ruangpengantin.com/demo/scroll006/img/thankyou.png?version=1598111369"
             alt=""
             class="mx-auto w-40 lg:w-60 h-auto"
+            data-aos="zoom-in"
           />
+          <div
+            class="mt-10 lg:mt-20 px-20 text-sm text-center text-white"
+            data-aos="fade-up"
+          >
+            <a
+              href="https://www.youtube.com/watch?v=tX73H2FRcK8&ab_channel=RiyandiKusuma"
+              class="text-rose-300"
+              target="_blank"
+            >
+              Music :
+              <br />
+              <span class="hover:text-slate-800">
+                Beautiful in White x Canon in D (Piano Cover by Riyandi Kusuma)
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
+    <audio id="lagu" loop>
+      <source src="src/asset/song.mp3" type="audio/mpeg" />
+    </audio>
+
     <!-- Floating Button -->
     <div
-      class="fixed w-max h-auto bottom-4 right-4 space-y-2 text-white text-xl z-10"
+      class="fixed w-max h-auto bottom-4 right-4 space-y-2 text-white text-xl z-30"
     >
       <button
         id="addDate"
@@ -254,11 +311,18 @@
       </button>
       <a
         id="openMap"
-        href="https://goo.gl/maps/BSw3yN2GNAxmX7cG9"
+        href="https://goo.gl/maps/8GYVTyiQH4W5WYMo7"
         class="flex w-14 h-14 justify-center items-center on-top hover:rotate-12 transition-all ease-out"
       >
         <i class="fa-solid fa-location-dot"></i>
       </a>
+      <button
+        id="laguToggle"
+        class="flex w-14 h-14 justify-center items-center on-top hover:rotate-12 transition-all ease-out"
+      >
+        <i class="fa-duotone fa-music animate-spin-slow"></i>
+        <i class="fa-duotone fa-music-slash hidden"></i>
+      </button>
     </div>
 
     <!-- iklan -->
@@ -269,7 +333,7 @@
       <div class="h-full relative">
         <div
           id="iniIklan"
-          class="absolute -top-10 inset-x-0 w-full text-white font-bold p-1 px-4 text-center rounded-full"
+          class="absolute -top-10 inset-x-0 w-max text-white font-bold p-1 px-4 text-center rounded-full cursor-pointer"
         >
           <span>Ini Iklan</span>
         </div>
@@ -321,7 +385,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        duration: 1000,
+        duration: 3000,
       });
     </script>
   </body>
