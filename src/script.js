@@ -1,21 +1,15 @@
 $(function () {
   $("#welcome_button").click(function () {
     $("#welcome_container").slideUp("slow");
+    $("audio")[0].play();
     setTimeout(function () {
-      $("#ads").addClass("translate-y-full");
-      $("#iniIklan").addClass("bg-white opacity-20").removeClass("text-white");
-    }, 3000);
+      $("#ads").addClass("-translate-x-96");
+    }, 2000);
   });
 
-  // Iklan
+  // // Iklan
   $("#closeAds").click(function () {
-    $("#ads").addClass("translate-y-full");
-    $("#iniIklan").addClass("bg-white opacity-20").removeClass("text-white");
-  });
-
-  $("#iniIklan").click(function () {
-    $("#ads").removeClass("translate-y-full");
-    $("#iniIklan").removeClass("bg-white opacity-20").addClass("text-white");
+    $("#ads").addClass("-translate-x-96");
   });
 
   // Change html bg-color on scroll
@@ -40,9 +34,11 @@ $(function () {
     var value = $(document).scrollTop();
 
     if (value >= 100) {
-      $("#addDate, #openMap").addClass("scrolled");
+      $("#floatingContainer").removeClass("translate-x-40");
+      $("#menuWrapper").removeClass("menu-light").addClass("menu-dark");
     } else {
-      $("#addDate, #openMap").removeClass("scrolled");
+      $("#floatingContainer").addClass("translate-x-40");
+      $("#menuWrapper").addClass("menu-light").removeClass("menu-dark");
     }
   });
 
@@ -84,15 +80,6 @@ $(function () {
     }
   });
 
-  // function play(src) {
-  //   $("audio")[0].play();
-  //   $("audio").muted = false;
-  // }
-
-  // $(window).on("load", function () {
-  //   play();
-  // });
-
   // Timer
   function makeTimer() {
     var endTime = new Date("22 November 2022 9:00:00");
@@ -129,4 +116,49 @@ $(function () {
   setInterval(function () {
     makeTimer();
   }, 1000);
+
+  // menu
+
+  $("ul li a").click(function () {
+    $("li a").removeClass("aktif");
+    $(this).addClass("aktif");
+  });
+
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+  const slider = document.querySelector("#menuItems");
+
+  const end = () => {
+    isDown = false;
+    slider.classList.remove("active");
+  };
+
+  const start = (e) => {
+    isDown = true;
+    slider.classList.add("active");
+    startX = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  };
+
+  const move = (e) => {
+    if (!isDown) return;
+
+    e.preventDefault();
+    const x = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+    const dist = x - startX;
+    slider.scrollLeft = scrollLeft - dist;
+  };
+
+  (() => {
+    slider.addEventListener("mousedown", start);
+    slider.addEventListener("touchstart", start);
+
+    slider.addEventListener("mousemove", move);
+    slider.addEventListener("touchmove", move);
+
+    slider.addEventListener("mouseleave", end);
+    slider.addEventListener("mouseup", end);
+    slider.addEventListener("touchend", end);
+  })();
 });

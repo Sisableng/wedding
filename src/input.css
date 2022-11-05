@@ -52,3 +52,23 @@ body {
 .scrolled {
   @apply bg-slate-800 hover:text-rose-400 !important;
 }
+
+.menu-light {
+  @apply bg-white;
+}
+
+.menu-dark {
+  @apply bg-slate-700 text-white;
+}
+
+.aktif {
+  @apply text-rose-400;
+}
+
+.item.active {
+  @apply cursor-grab;
+}
+
+.item {
+  @apply select-none inline-block;
+}
